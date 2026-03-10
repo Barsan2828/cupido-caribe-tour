@@ -16,14 +16,25 @@ font-family:Arial;
 background:#f4f8fb;
 }
 
-header{
+/* MENU */
+
+nav{
 background:#0077b6;
-color:white;
 padding:15px;
-text-align:center;
-font-size:24px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+color:white;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+margin-left:20px;
 font-weight:bold;
 }
+
+/* HERO */
 
 .hero{
 height:90vh;
@@ -38,32 +49,27 @@ color:white;
 }
 
 .hero-overlay{
-background:rgba(0,0,0,0.55);
+background:rgba(0,0,0,0.6);
 padding:60px;
 border-radius:10px;
 }
 
 .hero h1{
 font-size:55px;
-margin:0;
-}
-
-.hero p{
-font-size:22px;
 }
 
 .hero-btn{
 background:#00b4d8;
-padding:15px 35px;
+padding:15px 40px;
 border-radius:30px;
-text-decoration:none;
 color:white;
+text-decoration:none;
 font-weight:bold;
-display:inline-block;
-margin-top:20px;
 }
 
-#destinos{
+/* DESTINOS */
+
+.section{
 padding:70px 10%;
 text-align:center;
 }
@@ -91,6 +97,46 @@ object-fit:cover;
 padding:15px;
 }
 
+/* TESTIMONIOS */
+
+.testimonial{
+background:white;
+padding:20px;
+border-radius:10px;
+box-shadow:0 5px 15px rgba(0,0,0,0.15);
+}
+
+.stars{
+color:gold;
+}
+
+/* FORMULARIO */
+
+form{
+max-width:500px;
+margin:auto;
+}
+
+input, textarea{
+width:100%;
+padding:12px;
+margin:10px 0;
+border-radius:6px;
+border:1px solid #ccc;
+}
+
+button{
+background:#0077b6;
+color:white;
+border:none;
+padding:15px;
+border-radius:6px;
+width:100%;
+font-size:16px;
+}
+
+/* FOOTER */
+
 footer{
 background:#0077b6;
 color:white;
@@ -98,6 +144,8 @@ text-align:center;
 padding:20px;
 margin-top:40px;
 }
+
+/* WHATSAPP */
 
 .whatsapp{
 position:fixed;
@@ -111,6 +159,8 @@ font-size:28px;
 text-decoration:none;
 box-shadow:0 5px 15px rgba(0,0,0,0.3);
 }
+
+/* INSTAGRAM */
 
 .instagram{
 position:fixed;
@@ -131,25 +181,42 @@ box-shadow:0 5px 15px rgba(0,0,0,0.3);
 
 <body>
 
-<header>
-Cupido Caribe Tour
-</header>
+<!-- MENU -->
+
+<nav>
+
+<div><b>Cupido Caribe Tour</b></div>
+
+<div>
+<a href="#">Inicio</a>
+<a href="#destinos">Destinos</a>
+<a href="#testimonios">Opiniones</a>
+<a href="#reservas">Reservas</a>
+</div>
+
+</nav>
+
+<!-- HERO -->
 
 <section class="hero">
 
 <div class="hero-overlay">
 
-<h1>CUPIDO CARIBE TOUR</h1>
+<h1>Descubre Barranquilla</h1>
 
-<p>Turismo sostenible y bienestar en Barranquilla</p>
+<p>Turismo sostenible y experiencias únicas</p>
 
-<a href="#destinos" class="hero-btn">Descubrir Tours</a>
+<br>
+
+<a href="#destinos" class="hero-btn">Explorar Tours</a>
 
 </div>
 
 </section>
 
-<section id="destinos">
+<!-- DESTINOS -->
+
+<section id="destinos" class="section">
 
 <h2>Destinos Turísticos</h2>
 
@@ -176,11 +243,6 @@ Cupido Caribe Tour
 </div>
 
 <div class="card">
-<img src="https://upload.wikimedia.org/wikipedia/commons/5/5a/Carnaval_de_Barranquilla_flores.jpg">
-<h3>Flores del Carnaval</h3>
-</div>
-
-<div class="card">
 <img src="https://upload.wikimedia.org/wikipedia/commons/6/6c/Estadio_Metropolitano_Barranquilla.jpg">
 <h3>Aleta del Tiburón</h3>
 </div>
@@ -188,23 +250,126 @@ Cupido Caribe Tour
 </div>
 
 </section>
+<!-- TOURS -->
+
+<section id="tours">
+
+<h2>Paquetes Turísticos</h2>
+
+<div class="grid">
+
+<div class="tour">
+<h3>Tour Cultural Barranquilla</h3>
+<p>Recorrido por la historia y cultura del Caribe.</p>
+<p class="price">$120.000</p>
+</div>
+
+<div class="tour">
+<h3>Tour Gastronómico</h3>
+<p>Degustación de comida típica caribeña.</p>
+<p class="price">$150.000</p>
+</div>
+
+<div class="tour">
+<h3>Tour Río Magdalena</h3>
+<p>Paseo en el bus acuático por el río.</p>
+<p class="price">$120.000</p>
+</div>
+
+</div>
+
+</section>
+
+
+<!-- REFERIDOS -->
+
+<section class="referidos">
+
+<h2>Programa de Referidos</h2>
+
+<p>Invita amigos y gana descuentos en tus tours.</p>
+
+<button>Unirme al Programa</button>
+
+</section>
+<!-- TESTIMONIOS -->
+
+<section id="testimonios" class="section">
+
+<h2>Opiniones de Turistas</h2>
+
+<div class="grid">
+
+<div class="testimonial">
+<h3>María Gómez</h3>
+<p>Una experiencia increíble recorriendo Barranquilla.</p>
+<div class="stars">★★★★★</div>
+</div>
+
+<div class="testimonial">
+<h3>Carlos Pérez</h3>
+<p>Excelente guía y tours muy organizados.</p>
+<div class="stars">★★★★★</div>
+</div>
+
+<div class="testimonial">
+<h3>Laura Rodríguez</h3>
+<p>Recomiendo el tour gastronómico.</p>
+<div class="stars">★★★★☆</div>
+</div>
+
+</div>
+
+</section>
+
+<!-- FORMULARIO -->
+
+<section id="reservas" class="section">
+
+<h2>Reserva tu Tour</h2>
+
+<form>
+
+<input type="text" placeholder="Nombre">
+
+<input type="email" placeholder="Correo">
+
+<input type="tel" placeholder="Teléfono">
+
+<textarea placeholder="Mensaje"></textarea>
+
+<button>Enviar Reserva</button>
+
+</form>
+
+</section>
+
+<!-- MAPA -->
+
+<section class="section">
+
+<h2>Ubicación Barranquilla</h2>
+
+<iframe
+width="100%"
+height="400"
+src="https://maps.google.com/maps?q=barranquilla&t=&z=13&ie=UTF8&iwloc=&output=embed">
+</iframe>
+
+</section>
 
 <footer>
 
 © 2026 Cupido Caribe Tour  
-Turismo sostenible y experiencias auténticas
+Turismo sostenible en Barranquilla
 
 </footer>
 
-<a class="whatsapp" 
-href="https://wa.me/573015442626" 
-target="_blank">
+<a class="whatsapp" href="https://wa.me/573015442626" target="_blank">
 💬
 </a>
 
-<a class="instagram" 
-href="https://www.instagram.com/cupinocaribetours" 
-target="_blank">
+<a class="instagram" href="https://www.instagram.com/cupinocaribetours" target="_blank">
 📸
 </a>
 

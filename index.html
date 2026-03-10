@@ -15,39 +15,36 @@
 body{
 font-family:'Poppins',sans-serif;
 margin:0;
-background:linear-gradient(135deg,#00c6ff,#0072ff);
+background:#f4f9fb;
 color:#333;
 }
 
 /* HERO */
 
 .hero{
-position:relative;
 height:90vh;
+background-image:url("https://images.unsplash.com/photo-1507525428034-b723cf961d3e");
+background-size:cover;
+background-position:center;
 display:flex;
 align-items:center;
 justify-content:center;
 text-align:center;
 color:white;
-background-image:url("https://images.unsplash.com/photo-1507525428034-b723cf961d3e");
-background-size:cover;
-background-position:center;
 }
 
 .overlay{
 background:rgba(0,0,0,0.55);
-padding:50px;
-border-radius:12px;
+padding:60px;
+border-radius:15px;
 }
 
 .hero h1{
 font-size:55px;
-margin:0;
 }
 
 .hero p{
 font-size:22px;
-margin-top:10px;
 }
 
 .btn{
@@ -58,41 +55,30 @@ border-radius:30px;
 text-decoration:none;
 font-weight:bold;
 display:inline-block;
-margin-top:25px;
-}
-
-/* REFERIDO */
-
-.referido{
-background:#007BFF;
-color:white;
-padding:14px 28px;
-border-radius:30px;
-text-decoration:none;
-margin-left:10px;
-font-weight:bold;
+margin-top:20px;
 }
 
 /* SECCIONES */
 
 section{
 padding:70px 10%;
-background:white;
 }
 
 h2{
 text-align:center;
 margin-bottom:40px;
-color:#0072ff;
+color:#0077b6;
 }
 
 /* GRID */
 
 .grid{
 display:grid;
-grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
 gap:25px;
 }
+
+/* CARDS */
 
 .card{
 background:white;
@@ -108,12 +94,51 @@ transform:scale(1.05);
 
 .card img{
 width:100%;
-height:230px;
+height:220px;
 object-fit:cover;
 }
 
 .card p{
 padding:15px;
+}
+
+/* TOURS */
+
+.tour{
+background:white;
+padding:20px;
+border-radius:10px;
+box-shadow:0 5px 10px rgba(0,0,0,0.1);
+text-align:center;
+}
+
+.price{
+font-size:24px;
+color:#00b894;
+font-weight:bold;
+}
+
+/* REFERIDOS */
+
+.referidos{
+background:#007BFF;
+color:white;
+text-align:center;
+padding:70px 20px;
+}
+
+.referidos h2{
+color:white;
+}
+
+.referidos button{
+background:white;
+color:#007BFF;
+padding:15px 35px;
+border:none;
+border-radius:30px;
+font-size:16px;
+cursor:pointer;
 }
 
 /* TESTIMONIOS */
@@ -133,7 +158,7 @@ border:0;
 border-radius:10px;
 }
 
-/* FORM */
+/* FORMULARIO */
 
 form{
 max-width:500px;
@@ -182,7 +207,6 @@ display:flex;
 align-items:center;
 justify-content:center;
 box-shadow:0 5px 10px rgba(0,0,0,0.3);
-z-index:1000;
 }
 
 .whatsapp img{
@@ -222,11 +246,9 @@ width:32px;
 
 <h1>Cupido Caribe Tour</h1>
 
-<p>Turismo sostenible y experiencias únicas en Barranquilla</p>
+<p>Experiencias turísticas únicas en Barranquilla</p>
 
-<a class="btn" href="#destinos">Explorar Tours</a>
-
-<a class="referido" href="#referidos">Programa de Referidos</a>
+<a class="btn" href="#tours">Ver Tours</a>
 
 </div>
 
@@ -235,9 +257,9 @@ width:32px;
 
 <!-- DESTINOS -->
 
-<section id="destinos">
+<section>
 
-<h2>Descubre Barranquilla</h2>
+<h2>Destinos Turísticos</h2>
 
 <div class="grid">
 
@@ -266,29 +288,73 @@ width:32px;
 </section>
 
 
-<!-- TESTIMONIOS -->
+<!-- TOURS -->
+
+<section id="tours">
+
+<h2>Paquetes Turísticos</h2>
+
+<div class="grid">
+
+<div class="tour">
+<h3>Tour Cultural Barranquilla</h3>
+<p>Recorrido por la historia y cultura del Caribe.</p>
+<p class="price">$45 USD</p>
+</div>
+
+<div class="tour">
+<h3>Tour Gastronómico</h3>
+<p>Degustación de comida típica caribeña.</p>
+<p class="price">$35 USD</p>
+</div>
+
+<div class="tour">
+<h3>Tour Río Magdalena</h3>
+<p>Paseo en el bus acuático por el río.</p>
+<p class="price">$55 USD</p>
+</div>
+
+</div>
+
+</section>
+
+
+<!-- REFERIDOS -->
+
+<section class="referidos">
+
+<h2>Programa de Referidos</h2>
+
+<p>Invita amigos y gana descuentos en tus tours.</p>
+
+<button>Unirme al Programa</button>
+
+</section>
+
+
+<!-- RESEÑAS -->
 
 <section>
 
-<h2>Experiencias de Viajeros</h2>
+<h2>Opiniones de Viajeros</h2>
 
 <div class="grid">
 
 <div class="review">
 ⭐⭐⭐⭐⭐  
-<p>Una experiencia espectacular recorriendo Barranquilla.</p>
+<p>Una experiencia increíble recorriendo Barranquilla.</p>
 <b>Laura – México</b>
 </div>
 
 <div class="review">
 ⭐⭐⭐⭐⭐  
-<p>Muy organizado y cultural. Recomendado.</p>
+<p>Muy organizado y cultural.</p>
 <b>Andrés – Colombia</b>
 </div>
 
 <div class="review">
 ⭐⭐⭐⭐⭐  
-<p>El tour gastronómico fue increíble.</p>
+<p>El tour gastronómico fue espectacular.</p>
 <b>Carlos – España</b>
 </div>
 
@@ -326,9 +392,9 @@ width:32px;
 
 <input type="tel" placeholder="Teléfono">
 
-<textarea placeholder="Qué tour deseas reservar"></textarea>
+<textarea placeholder="Tour que deseas reservar"></textarea>
 
-<button>Solicitar información</button>
+<button>Enviar solicitud</button>
 
 </form>
 
@@ -339,7 +405,7 @@ width:32px;
 
 <p>
 Cupido Caribe Tour © 2026  
-Barranquilla - Turismo sostenible
+Turismo sostenible en Barranquilla
 </p>
 
 </footer>

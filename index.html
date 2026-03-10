@@ -6,24 +6,28 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Cupido Caribe Tour | Turismo en Barranquilla</title>
-
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+<title>Cupido Caribe Tour</title>
 
 <style>
 
 body{
-font-family:'Poppins',sans-serif;
 margin:0;
-background:#f4f9fb;
-color:#333;
+font-family:Arial;
+background:#f4f8fb;
 }
 
-/* HERO */
+header{
+background:#0077b6;
+color:white;
+padding:15px;
+text-align:center;
+font-size:24px;
+font-weight:bold;
+}
 
 .hero{
 height:90vh;
-background-image:url("https://images.unsplash.com/photo-1507525428034-b723cf961d3e");
+background-image:url("https://images.unsplash.com/photo-1501785888041-af3ef285b470");
 background-size:cover;
 background-position:center;
 display:flex;
@@ -33,44 +37,36 @@ text-align:center;
 color:white;
 }
 
-.overlay{
+.hero-overlay{
 background:rgba(0,0,0,0.55);
 padding:60px;
-border-radius:15px;
+border-radius:10px;
 }
 
 .hero h1{
 font-size:55px;
+margin:0;
 }
 
 .hero p{
 font-size:22px;
 }
 
-.btn{
-background:#FFD23F;
-color:black;
+.hero-btn{
+background:#00b4d8;
 padding:15px 35px;
 border-radius:30px;
 text-decoration:none;
+color:white;
 font-weight:bold;
 display:inline-block;
 margin-top:20px;
 }
 
-/* SECCIONES */
-
-section{
+#destinos{
 padding:70px 10%;
-}
-
-h2{
 text-align:center;
-margin-bottom:40px;
-color:#0077b6;
 }
-
-/* GRID */
 
 .grid{
 display:grid;
@@ -78,18 +74,11 @@ grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
 gap:25px;
 }
 
-/* CARDS */
-
 .card{
 background:white;
-border-radius:12px;
+border-radius:10px;
 overflow:hidden;
 box-shadow:0 10px 20px rgba(0,0,0,0.15);
-transition:0.3s;
-}
-
-.card:hover{
-transform:scale(1.05);
 }
 
 .card img{
@@ -98,137 +87,42 @@ height:220px;
 object-fit:cover;
 }
 
-.card p{
+.card h3{
 padding:15px;
 }
-
-/* TOURS */
-
-.tour{
-background:white;
-padding:20px;
-border-radius:10px;
-box-shadow:0 5px 10px rgba(0,0,0,0.1);
-text-align:center;
-}
-
-.price{
-font-size:24px;
-color:#00b894;
-font-weight:bold;
-}
-
-/* REFERIDOS */
-
-.referidos{
-background:#007BFF;
-color:white;
-text-align:center;
-padding:70px 20px;
-}
-
-.referidos h2{
-color:white;
-}
-
-.referidos button{
-background:white;
-color:#007BFF;
-padding:15px 35px;
-border:none;
-border-radius:30px;
-font-size:16px;
-cursor:pointer;
-}
-
-/* TESTIMONIOS */
-
-.review{
-background:#f5f5f5;
-padding:20px;
-border-radius:10px;
-}
-
-/* MAPA */
-
-.map iframe{
-width:100%;
-height:400px;
-border:0;
-border-radius:10px;
-}
-
-/* FORMULARIO */
-
-form{
-max-width:500px;
-margin:auto;
-display:flex;
-flex-direction:column;
-gap:15px;
-}
-
-input,textarea{
-padding:12px;
-border-radius:8px;
-border:1px solid #ccc;
-}
-
-button{
-background:#00c896;
-color:white;
-padding:15px;
-border:none;
-border-radius:30px;
-font-size:16px;
-cursor:pointer;
-}
-
-/* FOOTER */
 
 footer{
-background:#002b5b;
+background:#0077b6;
 color:white;
 text-align:center;
-padding:30px;
+padding:20px;
+margin-top:40px;
 }
-
-/* BOTONES FLOTANTES */
 
 .whatsapp{
 position:fixed;
-bottom:25px;
-right:25px;
+bottom:20px;
+right:20px;
 background:#25D366;
-width:60px;
-height:60px;
+color:white;
+padding:15px;
 border-radius:50%;
-display:flex;
-align-items:center;
-justify-content:center;
-box-shadow:0 5px 10px rgba(0,0,0,0.3);
-}
-
-.whatsapp img{
-width:35px;
+font-size:28px;
+text-decoration:none;
+box-shadow:0 5px 15px rgba(0,0,0,0.3);
 }
 
 .instagram{
 position:fixed;
-bottom:25px;
-right:95px;
-background:#E4405F;
-width:60px;
-height:60px;
+bottom:90px;
+right:20px;
+background:#E1306C;
+color:white;
+padding:15px;
 border-radius:50%;
-display:flex;
-align-items:center;
-justify-content:center;
-box-shadow:0 5px 10px rgba(0,0,0,0.3);
-}
-
-.instagram img{
-width:32px;
+font-size:24px;
+text-decoration:none;
+box-shadow:0 5px 15px rgba(0,0,0,0.3);
 }
 
 </style>
@@ -237,27 +131,25 @@ width:32px;
 
 <body>
 
-
-<!-- HERO -->
+<header>
+Cupido Caribe Tour
+</header>
 
 <section class="hero">
 
-<div class="overlay">
+<div class="hero-overlay">
 
-<h1>Cupido Caribe Tour</h1>
+<h1>CUPIDO CARIBE TOUR</h1>
 
-<p>Experiencias turísticas únicas en Barranquilla</p>
+<p>Turismo sostenible y bienestar en Barranquilla</p>
 
-<a class="btn" href="#tours">Ver Tours</a>
+<a href="#destinos" class="hero-btn">Descubrir Tours</a>
 
 </div>
 
 </section>
 
-
-<!-- DESTINOS -->
-
-<section>
+<section id="destinos">
 
 <h2>Destinos Turísticos</h2>
 
@@ -265,165 +157,56 @@ width:32px;
 
 <div class="card">
 <img src="https://upload.wikimedia.org/wikipedia/commons/3/3e/Ventana_al_Mundo_Barranquilla.jpg">
-<p><b>Ventana al Mundo</b></p>
+<h3>Ventana al Mundo</h3>
 </div>
 
 <div class="card">
 <img src="https://upload.wikimedia.org/wikipedia/commons/0/0f/Malec%C3%B3n_del_R%C3%ADo_Barranquilla.jpg">
-<p><b>Malecón del Río</b></p>
+<h3>Malecón del Río</h3>
 </div>
 
 <div class="card">
 <img src="https://upload.wikimedia.org/wikipedia/commons/4/45/Sombrero_vueltiao.jpg">
-<p><b>Sombrero Vueltiao</b></p>
+<h3>Sombrero Vueltiao</h3>
+</div>
+
+<div class="card">
+<img src="https://upload.wikimedia.org/wikipedia/commons/2/24/Barranquilla_bus_acuatico.jpg">
+<h3>Bus Acuático</h3>
+</div>
+
+<div class="card">
+<img src="https://upload.wikimedia.org/wikipedia/commons/5/5a/Carnaval_de_Barranquilla_flores.jpg">
+<h3>Flores del Carnaval</h3>
 </div>
 
 <div class="card">
 <img src="https://upload.wikimedia.org/wikipedia/commons/6/6c/Estadio_Metropolitano_Barranquilla.jpg">
-<p><b>Aleta del Tiburón</b></p>
+<h3>Aleta del Tiburón</h3>
 </div>
 
 </div>
 
 </section>
-
-
-<!-- TOURS -->
-
-<section id="tours">
-
-<h2>Paquetes Turísticos</h2>
-
-<div class="grid">
-
-<div class="tour">
-<h3>Tour Cultural Barranquilla</h3>
-<p>Recorrido por la historia y cultura del Caribe.</p>
-<p class="price">$130.000 Pesos/p>
-</div>
-
-<div class="tour">
-<h3>Tour Gastronómico</h3>
-<p>Degustación de comida típica caribeña.</p>
-<p class="price">$150.000 pesos</p>
-</div>
-
-<div class="tour">
-<h3>Tour Río Magdalena</h3>
-<p>Paseo en el bus acuático por el río.</p>
-<p class="price">$120.000 pesos</p>
-</div>
-
-</div>
-
-</section>
-
-
-<!-- REFERIDOS -->
-
-<section class="referidos">
-
-<h2>Programa de Referidos</h2>
-
-<p>Invita amigos y gana descuentos en tus tours.</p>
-
-<button>Unirme al Programa</button>
-
-</section>
-
-
-<!-- RESEÑAS -->
-
-<section>
-
-<h2>Opiniones de Viajeros</h2>
-
-<div class="grid">
-
-<div class="review">
-⭐⭐⭐⭐⭐  
-<p>Una experiencia increíble recorriendo Barranquilla.</p>
-<b>Laura – México</b>
-</div>
-
-<div class="review">
-⭐⭐⭐⭐⭐  
-<p>Muy organizado y cultural.</p>
-<b>Andrés – Colombia</b>
-</div>
-
-<div class="review">
-⭐⭐⭐⭐⭐  
-<p>El tour gastronómico fue espectacular.</p>
-<b>Carlos – España</b>
-</div>
-
-</div>
-
-</section>
-
-
-<!-- MAPA -->
-
-<section>
-
-<h2>Ubicación</h2>
-
-<div class="map">
-
-<iframe src="https://maps.google.com/maps?q=barranquilla&t=&z=13&ie=UTF8&iwloc=&output=embed"></iframe>
-
-</div>
-
-</section>
-
-
-<!-- RESERVA -->
-
-<section>
-
-<h2>Reserva tu Tour</h2>
-
-<form>
-
-<input type="text" placeholder="Nombre">
-
-<input type="email" placeholder="Correo">
-
-<input type="tel" placeholder="Teléfono">
-
-<textarea placeholder="Tour que deseas reservar"></textarea>
-
-<button>Enviar solicitud</button>
-
-</form>
-
-</section>
-
 
 <footer>
 
-<p>
-Cupido Caribe Tour © 2026  
-Turismo sostenible en Barranquilla
-</p>
+© 2026 Cupido Caribe Tour  
+Turismo sostenible y experiencias auténticas
 
 </footer>
 
-
-<!-- WHATSAPP -->
-
-<a class="whatsapp" href="https://wa.me/573015442626" target="_blank">
-<img src="https://cdn-icons-png.flaticon.com/512/733/733585.png">
+<a class="whatsapp" 
+href="https://wa.me/573015442626" 
+target="_blank">
+💬
 </a>
 
-
-<!-- INSTAGRAM -->
-
-<a class="instagram" href="https://www.instagram.com/cupinocaribetours?igsh=dGhwYXY4OW80Y3J1" target="_blank">
-<img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png">
+<a class="instagram" 
+href="https://www.instagram.com/cupinocaribetours" 
+target="_blank">
+📸
 </a>
-
 
 </body>
 </html>

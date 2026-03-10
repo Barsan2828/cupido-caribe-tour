@@ -6,7 +6,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Cupido Caribe Tour | Turismo Sostenible</title>
+<title>Cupido Caribe Tour | Turismo en Barranquilla</title>
 
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 
@@ -15,73 +15,100 @@
 body{
 font-family:'Poppins',sans-serif;
 margin:0;
-background:#f5f7f6;
+background:linear-gradient(135deg,#00c6ff,#0072ff);
 color:#333;
 }
 
-header{
-background-image:url("https://images.unsplash.com/photo-1600379948163-8b80a4a8f32b");
-background-size:cover;
-background-position:center;
+/* HERO */
+
+.hero{
+position:relative;
 height:90vh;
 display:flex;
 align-items:center;
 justify-content:center;
 text-align:center;
 color:white;
+background-image:url("https://images.unsplash.com/photo-1507525428034-b723cf961d3e");
+background-size:cover;
+background-position:center;
 }
 
-.hero{
+.overlay{
 background:rgba(0,0,0,0.55);
-padding:40px;
-border-radius:10px;
+padding:50px;
+border-radius:12px;
 }
 
 .hero h1{
-font-size:48px;
+font-size:55px;
+margin:0;
 }
 
 .hero p{
-font-size:20px;
+font-size:22px;
+margin-top:10px;
 }
 
 .btn{
-background:#00c896;
-padding:15px 30px;
+background:#FFD23F;
+color:black;
+padding:15px 35px;
 border-radius:30px;
 text-decoration:none;
-color:white;
 font-weight:bold;
 display:inline-block;
-margin-top:20px;
+margin-top:25px;
 }
 
+/* REFERIDO */
+
+.referido{
+background:#007BFF;
+color:white;
+padding:14px 28px;
+border-radius:30px;
+text-decoration:none;
+margin-left:10px;
+font-weight:bold;
+}
+
+/* SECCIONES */
+
 section{
-padding:60px 10%;
+padding:70px 10%;
+background:white;
 }
 
 h2{
 text-align:center;
 margin-bottom:40px;
-color:#009879;
+color:#0072ff;
 }
+
+/* GRID */
 
 .grid{
 display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
 gap:25px;
 }
 
 .card{
 background:white;
-border-radius:10px;
+border-radius:12px;
 overflow:hidden;
-box-shadow:0 10px 20px rgba(0,0,0,0.1);
+box-shadow:0 10px 20px rgba(0,0,0,0.15);
+transition:0.3s;
+}
+
+.card:hover{
+transform:scale(1.05);
 }
 
 .card img{
 width:100%;
-height:220px;
+height:230px;
 object-fit:cover;
 }
 
@@ -89,14 +116,59 @@ object-fit:cover;
 padding:15px;
 }
 
-footer{
-background:#222;
-color:white;
-text-align:center;
-padding:25px;
+/* TESTIMONIOS */
+
+.review{
+background:#f5f5f5;
+padding:20px;
+border-radius:10px;
 }
 
-/* BOTON WHATSAPP */
+/* MAPA */
+
+.map iframe{
+width:100%;
+height:400px;
+border:0;
+border-radius:10px;
+}
+
+/* FORM */
+
+form{
+max-width:500px;
+margin:auto;
+display:flex;
+flex-direction:column;
+gap:15px;
+}
+
+input,textarea{
+padding:12px;
+border-radius:8px;
+border:1px solid #ccc;
+}
+
+button{
+background:#00c896;
+color:white;
+padding:15px;
+border:none;
+border-radius:30px;
+font-size:16px;
+cursor:pointer;
+}
+
+/* FOOTER */
+
+footer{
+background:#002b5b;
+color:white;
+text-align:center;
+padding:30px;
+}
+
+/* BOTONES FLOTANTES */
 
 .whatsapp{
 position:fixed;
@@ -116,8 +188,6 @@ z-index:1000;
 .whatsapp img{
 width:35px;
 }
-
-/* INSTAGRAM */
 
 .instagram{
 position:fixed;
@@ -143,92 +213,133 @@ width:32px;
 
 <body>
 
-<header>
 
-<div class="hero">
+<!-- HERO -->
+
+<section class="hero">
+
+<div class="overlay">
 
 <h1>Cupido Caribe Tour</h1>
 
-<p>Turismo sostenible y bienestar en Barranquilla</p>
+<p>Turismo sostenible y experiencias únicas en Barranquilla</p>
 
 <a class="btn" href="#destinos">Explorar Tours</a>
 
+<a class="referido" href="#referidos">Programa de Referidos</a>
+
 </div>
 
-</header>
+</section>
 
+
+<!-- DESTINOS -->
 
 <section id="destinos">
 
-<h2>Destinos de Barranquilla</h2>
+<h2>Descubre Barranquilla</h2>
 
 <div class="grid">
 
 <div class="card">
 <img src="https://upload.wikimedia.org/wikipedia/commons/3/3e/Ventana_al_Mundo_Barranquilla.jpg">
-<p><b>Ventana al Mundo</b><br>El monumento turístico más emblemático de Barranquilla.</p>
+<p><b>Ventana al Mundo</b></p>
 </div>
 
 <div class="card">
 <img src="https://upload.wikimedia.org/wikipedia/commons/0/0f/Malec%C3%B3n_del_R%C3%ADo_Barranquilla.jpg">
-<p><b>Malecón del Río</b><br>Un espacio turístico moderno frente al río Magdalena.</p>
-</div>
-
-<div class="card">
-<img src="https://images.unsplash.com/photo-1609766856924-46f2a1c3b8da">
-<p><b>Barrio Las Flores</b><br>Tradición pesquera y gastronomía caribeña.</p>
+<p><b>Malecón del Río</b></p>
 </div>
 
 <div class="card">
 <img src="https://upload.wikimedia.org/wikipedia/commons/4/45/Sombrero_vueltiao.jpg">
-<p><b>Sombrero Vueltiao</b><br>Uno de los símbolos culturales de Colombia.</p>
+<p><b>Sombrero Vueltiao</b></p>
 </div>
 
 <div class="card">
 <img src="https://upload.wikimedia.org/wikipedia/commons/6/6c/Estadio_Metropolitano_Barranquilla.jpg">
-<p><b>Aleta del Tiburón</b><br>Arquitectura emblemática del Estadio Metropolitano.</p>
-</div>
-
-<div class="card">
-<img src="https://images.unsplash.com/photo-1601513445498-7c6e6e8c2c38">
-<p><b>Bus Acuático</b><br>Experiencia turística navegando el río Magdalena.</p>
+<p><b>Aleta del Tiburón</b></p>
 </div>
 
 </div>
 
 </section>
 
+
+<!-- TESTIMONIOS -->
 
 <section>
 
-<h2>Experiencias Turísticas</h2>
+<h2>Experiencias de Viajeros</h2>
 
 <div class="grid">
 
-<div class="card">
-<img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470">
-<p><b>Senderismo Natural</b><br>Recorridos ecológicos y reservas naturales.</p>
+<div class="review">
+⭐⭐⭐⭐⭐  
+<p>Una experiencia espectacular recorriendo Barranquilla.</p>
+<b>Laura – México</b>
 </div>
 
-<div class="card">
-<img src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1">
-<p><b>Tour Gastronómico</b><br>Sabores auténticos del Caribe colombiano.</p>
+<div class="review">
+⭐⭐⭐⭐⭐  
+<p>Muy organizado y cultural. Recomendado.</p>
+<b>Andrés – Colombia</b>
 </div>
 
-<div class="card">
-<img src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac">
-<p><b>Experiencias Culturales</b><br>Música, danza y cultura del Caribe.</p>
+<div class="review">
+⭐⭐⭐⭐⭐  
+<p>El tour gastronómico fue increíble.</p>
+<b>Carlos – España</b>
 </div>
 
 </div>
 
 </section>
+
+
+<!-- MAPA -->
+
+<section>
+
+<h2>Ubicación</h2>
+
+<div class="map">
+
+<iframe src="https://maps.google.com/maps?q=barranquilla&t=&z=13&ie=UTF8&iwloc=&output=embed"></iframe>
+
+</div>
+
+</section>
+
+
+<!-- RESERVA -->
+
+<section>
+
+<h2>Reserva tu Tour</h2>
+
+<form>
+
+<input type="text" placeholder="Nombre">
+
+<input type="email" placeholder="Correo">
+
+<input type="tel" placeholder="Teléfono">
+
+<textarea placeholder="Qué tour deseas reservar"></textarea>
+
+<button>Solicitar información</button>
+
+</form>
+
+</section>
+
 
 <footer>
 
 <p>
 Cupido Caribe Tour © 2026  
-Turismo sostenible en Barranquilla
+Barranquilla - Turismo sostenible
 </p>
 
 </footer>
@@ -243,9 +354,10 @@ Turismo sostenible en Barranquilla
 
 <!-- INSTAGRAM -->
 
-<a class="instagram" href="https://instagram.com/cupidocaribetours" target="_blank">
+<a class="instagram" href="https://www.instagram.com/cupinocaribetours?igsh=dGhwYXY4OW80Y3J1" target="_blank">
 <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png">
 </a>
+
 
 </body>
 </html>
